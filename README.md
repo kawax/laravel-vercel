@@ -44,3 +44,16 @@ S3などが使えるはず。
 
 Vercelで難しそうなのはキューワーカーやHorizonをずっと動かし続ける部分？  
 個人的にはそこが一番重要。
+
+## デプロイ時のartisanコマンド
+composer scriptsに`vercel`を作ればデプロイ時に実行されるのでキャッシュやマイグレーションはこれでできそう。
+
+```
+    "scripts": {
+        "vercel": [
+            "@php artisan config:cache",
+            "@php artisan route:cache",
+            "@php artisan view:cache"
+        ]
+    }
+```
