@@ -59,6 +59,11 @@
             "@php artisan key:generate --ansi"
         ],
         "sail:up": "vendor/bin/sail up -d",
-        "sail:down": "vendor/bin/sail down"
+        "sail:down": "vendor/bin/sail down",
+        "vercel": [
+            "@php artisan config:cache",
+            "@php artisan route:cache",
+            "@php artisan view:cache"
+        ]
     }
 }
