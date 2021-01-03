@@ -13,6 +13,11 @@ https://github.com/juicyfx/vercel-examples/tree/master/php-laravel
 "VIEW_COMPILED_PATH": "/tmp"
 ```
 
+東京リージョンで使うには
+```
+"regions": ["hnd1"],
+```
+
 ## Databases
 https://vercel.com/docs/solutions/databases
 
