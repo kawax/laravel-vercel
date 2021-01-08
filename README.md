@@ -62,3 +62,6 @@ composer scriptsに`vercel`を作ればデプロイ時に実行されるので�
         ]
     }
 ```
+
+## セッション
+databaseかcookieを使う。
