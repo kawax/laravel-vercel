@@ -65,3 +65,9 @@ composer scriptsに`vercel`を作ればデプロイ時に実行されるので�
 
 ## セッション
 databaseかcookieを使う。
+
+## TrustProxies
+url()やroute()を使った時に`http://`になる場合、TrustProxiesミドルウェアで$proxiesを設定。
+```
+protected $proxies = '*';
+```
