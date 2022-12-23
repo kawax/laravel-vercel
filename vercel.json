@@ -23,7 +23,7 @@
             "destination": "/public/robots.txt"
         },
         {
-            "source": "/public/index.php",
+            "source": "/index.php",
             "destination": "/api/index.php"
         }
     ],
