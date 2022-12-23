@@ -4,7 +4,7 @@
     ],
     "outputDirectory": "public",
     "cleanUrls": true,
-    "trailingSlash": true,
+    "trailingSlash": false,
     "functions": {
         "api/index.php": {
             "runtime": "vercel-php@0.5.2"
