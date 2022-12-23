@@ -3,6 +3,7 @@
         "hnd1"
     ],
     "outputDirectory": "public",
+    "trailingSlash": true,
     "functions": {
         "api/index.php": {
             "runtime": "vercel-php@0.5.2"
@@ -22,7 +23,7 @@
             "destination": "/public/robots.txt"
         },
         {
-            "source": "/(.*)",
+            "source": "/",
             "destination": "/api/index.php"
         }
     ],
