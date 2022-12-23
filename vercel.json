@@ -2,13 +2,19 @@
     "regions": [
         "hnd1"
     ],
+    "outputDirectory": "public",
     "cleanUrls": false,
     "trailingSlash": false,
-    "functions": {
-        "api/index.php": {
-            "runtime": "vercel-php@0.5.2"
+    "builds": [
+        {
+            "src": "/api/index.php",
+            "use": "vercel-php@0.5.2"
+        },
+        {
+            "src": "/public/**",
+            "use": "@vercel/static"
         }
-    },
+    ],
     "rewrites": [
         {
             "source": "/(.*)",
