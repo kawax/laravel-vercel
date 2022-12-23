@@ -6,6 +6,9 @@
     "functions": {
         "api/index.php": {
             "runtime": "vercel-php@0.5.2"
+        },
+        "public/index.php": {
+            "runtime": "vercel-php@0.5.2"
         }
     },
     "rewrites": [
