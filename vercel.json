@@ -12,11 +12,7 @@
     },
     "rewrites": [
         {
-            "source": "/(.*)",
-            "destination": "/api/index"
-        },
-        {
-            "source": "/",
+            "source": "(.*)",
             "destination": "/api/index"
         }
     ],
