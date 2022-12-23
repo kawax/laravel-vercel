@@ -11,19 +11,7 @@
     },
     "rewrites": [
         {
-            "source": "/build/assets/:file",
-            "destination": "/public/build/assets/:file"
-        },
-        {
-            "source": "/favicon.ico",
-            "destination": "/public/favicon.ico"
-        },
-        {
-            "source": "/robots.txt",
-            "destination": "/public/robots.txt"
-        },
-        {
-            "source": "/index.php",
+            "source": "/(.*)",
             "destination": "/api/index.php"
         }
     ],
