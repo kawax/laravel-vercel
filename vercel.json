@@ -13,7 +13,18 @@
         }
     ],
     "routes": [
-        { "handle": "filesystem" },
+        {
+            "src": "/build/assets/(.*)",
+            "dest": "/public/build/assets/$1"
+        },
+        {
+            "src": "/favicon.ico",
+            "dest": "/public/favicon.ico"
+        },
+        {
+            "src": "/robots.txt",
+            "dest": "/public/robots.txt"
+        },
         {
             "src": "/(.*)",
             "dest": "/api/index.php"
