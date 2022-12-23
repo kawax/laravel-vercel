@@ -2,7 +2,7 @@
     "regions": [
         "hnd1"
     ],
-    "outputDirectory": "api",
+    "outputDirectory": "public",
     "trailingSlash": true,
     "functions": {
         "api/index.php": {
@@ -23,7 +23,7 @@
             "destination": "/public/robots.txt"
         },
         {
-            "source": "/:path",
+            "source": "/public/index.php",
             "destination": "/api/index.php"
         }
     ],
