@@ -3,6 +3,7 @@
         "hnd1"
     ],
     "outputDirectory": "public",
+    "cleanUrls": true,
     "trailingSlash": true,
     "functions": {
         "api/index.php": {
@@ -11,7 +12,7 @@
     },
     "rewrites": [
         {
-            "source": "/index.php",
+            "source": "/(.*)",
             "destination": "/api/index"
         },
         {
