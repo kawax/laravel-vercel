@@ -2,7 +2,7 @@
     "regions": [
         "hnd1"
     ],
-    "outputDirectory": "public",
+    "outputDirectory": ".",
     "trailingSlash": true,
     "functions": {
         "api/index.php": {
