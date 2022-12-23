@@ -2,7 +2,6 @@
     "regions": [
         "hnd1"
     ],
-    "outputDirectory": "public",
     "cleanUrls": false,
     "trailingSlash": false,
     "functions": {
