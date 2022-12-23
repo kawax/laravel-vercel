@@ -2,7 +2,7 @@
     "regions": [
         "hnd1"
     ],
-    "outputDirectory": ".",
+    "outputDirectory": "public",
     "trailingSlash": true,
     "functions": {
         "api/index.php": {
@@ -11,8 +11,12 @@
     },
     "rewrites": [
         {
-            "source": "/:path*",
-            "destination": "/api/index/:path*"
+            "source": "/(.*)",
+            "destination": "/api/index"
+        },
+        {
+            "source": "/",
+            "destination": "/api/index"
         }
     ],
     "env": {
